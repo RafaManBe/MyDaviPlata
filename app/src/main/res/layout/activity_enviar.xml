@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondofe"
+    tools:context=".EnviarActivity">
+
+    <TextView
+        android:id="@+id/tvpasarplata"
+        android:layout_width="362dp"
+        android:layout_height="68dp"
+        android:background="#BF102D"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Pasar Plata"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/platamensaje"
+        android:layout_width="306dp"
+        android:layout_height="459dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="96dp"
+        android:background="@color/plateado"
+        android:gravity="center_horizontal"
+        android:text="Por favor indique a quien desea pasar plata."
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvpasarplata"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <TextView
+        android:id="@+id/pasarcedula"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:hint="Cedula"
+        app:layout_constraintEnd_toEndOf="@+id/platamensaje"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/platamensaje"
+        app:layout_constraintTop_toTopOf="@+id/platamensaje" />
+
+    <EditText
+        android:id="@+id/plataenviada"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/plateado"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/platamensaje"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/platamensaje"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:hint="Valor a enviar"
+        app:layout_constraintEnd_toEndOf="@+id/platamensaje"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/platamensaje"
+        app:layout_constraintTop_toBottomOf="@+id/cedularecibe" />
+
+    <EditText
+        android:id="@+id/cedularecibe"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/plateado"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/platamensaje"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/platamensaje"
+        app:layout_constraintTop_toBottomOf="@+id/pasarcedula" />
+
+    <Button
+        android:id="@+id/remitente"
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#BF102D"
+        android:onClick="enviar"
+        android:text="ENVIAR"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/platamensaje"
+        app:layout_constraintEnd_toEndOf="@+id/platamensaje"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/platamensaje"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/plataenviada"
+        app:layout_constraintVertical_bias="0.494" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

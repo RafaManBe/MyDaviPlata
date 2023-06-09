@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity"
+    android:background="@drawable/fondofe">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imglogoblanco1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logoblanco"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:text="Nombre"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="Ingrese su nombre"
+                android:textColorHint="#8BFFFFFF"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNombre"
+                android:layout_marginTop="0dp"
+                app:layout_constraintHorizontal_bias="0.1"/>
+            <TextView
+                android:id="@+id/tvApellido"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:text="Apellido"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etNombre"
+                app:layout_constraintHorizontal_bias="0.1"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/etApellido"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="Ingrese su apellido"
+                android:textColor="@color/white"
+                android:textColorHint="#8BFFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvApellido"
+                android:layout_marginTop="0dp"
+                app:layout_constraintHorizontal_bias="0.1"/>
+            <TextView
+                android:id="@+id/tvCedula"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:text="Cedula"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etApellido"
+                app:layout_constraintHorizontal_bias="0.1"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/etCedula"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="Ingrese su cedula"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="#8BFFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCedula"
+                android:layout_marginTop="0dp"
+                app:layout_constraintHorizontal_bias="0.1"/>
+            <TextView
+                android:id="@+id/tvCelular"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:text="Celular"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etCedula"
+                app:layout_constraintHorizontal_bias="0.1"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/etCelular"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="Ingrese su celular"
+                android:inputType="phone"
+                android:textColor="@color/white"
+                android:textColorHint="#8BFFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCelular"
+                android:layout_marginTop="0dp"
+                app:layout_constraintHorizontal_bias="0.1"/>
+            <TextView
+                android:id="@+id/tvCorreo"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:text="Correo"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etCelular"
+                app:layout_constraintHorizontal_bias="0.1"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/etCorreo"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="Ingrese su correo"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:textColorHint="#8BFFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCorreo"
+                android:layout_marginTop="0dp"
+                app:layout_constraintHorizontal_bias="0.1"/>
+            <TextView
+                android:id="@+id/tvContraseña"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:text="Contraseña"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etCorreo"
+                app:layout_constraintHorizontal_bias="0.1"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/etContraseña"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="Ingrese su contraseña"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:textColor="#8BFFFFFF"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvContraseña" />
+            <TextView
+                android:id="@+id/tvConfirmar"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:text="Contraseña"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etContraseña"
+                app:layout_constraintHorizontal_bias="0.1"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/etConfirmar"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="Ingrese su contraseña"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:textColor="@color/white"
+                android:textColorHint="#8BFFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvConfirmar" />
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:text="Crear DaviPlata"
+                android:textColor="#FF001E"
+                android:textSize="20dp"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="center"
+                android:onClick="registrar"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

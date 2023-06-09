@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EleccionActivity"
+    android:background="@drawable/fondofe">
+
+    <ImageView
+        android:id="@+id/imglogoblanco"
+        android:layout_width="120dp"
+        android:layout_height="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049"
+        app:srcCompat="@drawable/logoblanco" />
+
+    <TextView
+        android:id="@+id/etBienvenido"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="¡Bienvenido!"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imglogoblanco"
+        android:layout_marginTop="30dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/etSeleccion"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Seleccione una de las opciones para continuar"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etBienvenido"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/btnCrear"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="144dp"
+        android:backgroundTint="#DE0700"
+        android:onClick="crear"
+        android:text="Crear mi DaviPlata"
+        android:textColor="#FDFDFC"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSeleccion" />
+
+    <Button
+        android:id="@+id/btnTengo"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/plateado"
+        android:onClick="tengo"
+        android:text="Ya tengo DaviPlata"
+        android:textSize="17dp"
+        android:textColor="#DE0700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCrear"
+        app:layout_constraintVertical_bias="0.2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
